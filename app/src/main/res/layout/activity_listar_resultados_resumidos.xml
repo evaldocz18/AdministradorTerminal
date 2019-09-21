@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutInternoResultadosResumidos"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".activity.Administrador.Resultados.ResultadosQuestionarios.ResultadosQuestionariosActivity">
+
+    <Button
+        android:id="@+id/bt_listarResultadosResumidos_confirmar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="8dp"
+        android:onClick="clicouExibirResultadosQuantitativos"
+        android:padding="8dp"
+        android:text="Exibir Resultados Quantitativos" />
+
+    <Button
+        android:id="@+id/bt_exibir_resultados_detalhados"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="8dp"
+        android:onClick="clicouExibirResultadosDetalhados"
+        android:padding="8dp"
+        android:text="Exibir resultados Detalhados" />
+
+    <TextView
+        android:id="@+id/tv_listarResultadosResumidos_nomeQuestionario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:text="Selecione um Questionário da Lista"
+        android:textColor="@color/vermelho"
+        android:textSize="24sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_mostrar_resultados_resumidos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:addStatesFromChildren="false"
+        android:animationCache="false"
+        android:clickable="true"
+        android:padding="8dp" />
+</LinearLayout>

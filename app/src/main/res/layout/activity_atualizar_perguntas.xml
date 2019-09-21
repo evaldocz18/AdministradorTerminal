@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.Administrador.Questionarios.GerenciadorQuestionatio.AtualizarPerguntasActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_atualizarPerguntas_nomeQuestionario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Nome do Questionário"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/tv_atualizarPerguntas_quantidadeDePerguntasCadastradas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Quantidade de Perguntas Cadastradas"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/tv_atualizarPerguntas_dataCriacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Data de Criação do Questionário"
+                android:textColor="@android:color/black" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etd_atuzalizarPerguntas_administradorResponsavel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Administrador Responsável"
+                android:padding="5dp">
+
+                <EditText
+                    android:id="@+id/edt_AdministradorResponsavel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etd_atuzalizarPerguntas_pergunta1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:autoLink="all"
+                android:hint="Pergunta 1"
+                android:lines="5"
+                android:maxLines="4"
+                android:padding="5dp"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:scrollbarAlwaysDrawVerticalTrack="false"
+                android:scrollbars="vertical"
+                android:textColorHint="@color/colorPrimary">
+
+                <MultiAutoCompleteTextView
+                    android:id="@+id/multiAutoCompleteTextView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="5dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_atualizarPerguntas_resposta1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tipo de Resposta 1"
+                android:padding="5dp"
+                android:paddingLeft="13dp"
+                android:paddingTop="1dp"
+                android:paddingRight="13dp"
+                android:paddingBottom="4dp"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spin_atualizarPerguntas1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="36sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etd_atuzalizarPerguntas_pergunta2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Pergunta 2 "
+                android:padding="5dp"
+                android:textColorHint="@color/colorPrimary">
+
+                <MultiAutoCompleteTextView
+                    android:id="@+id/multiAutoCompleteTextView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="5dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_atualizarPerguntas_resposta2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Tipo de Resposta 2"
+                android:padding="5dp"
+                android:paddingLeft="13dp"
+                android:paddingTop="1dp"
+                android:paddingRight="13dp"
+                android:paddingBottom="4dp"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spin_atualizarPerguntas2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etd_atuzalizarPerguntas_pergunta3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Pergunta 3 "
+                android:padding="5dp"
+                android:textColorHint="@color/colorPrimary">
+
+                <MultiAutoCompleteTextView
+                    android:id="@+id/multiAutoCompleteTextView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="5dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_atualizarPerguntas_resposta3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Tipo de Resposta 3"
+                android:padding="5dp"
+                android:paddingLeft="13dp"
+                android:paddingTop="1dp"
+                android:paddingRight="13dp"
+                android:paddingBottom="4dp"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spin_atualizarPerguntas3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etd_atuzalizarPerguntas_pergunta4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Pergunta 4 "
+                android:padding="5dp"
+                android:textColorHint="@color/colorPrimary">
+
+                <MultiAutoCompleteTextView
+                    android:id="@+id/multiAutoCompleteTextView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="5dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_atualizarPerguntas_resposta4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Tipo de Resposta 4"
+                android:padding="5dp"
+                android:paddingLeft="13dp"
+                android:paddingTop="1dp"
+                android:paddingRight="13dp"
+                android:paddingBottom="4dp"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spin_atualizarPerguntas4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etd_atuzalizarPerguntas_pergunta5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Pergunta 5 "
+                android:padding="5dp"
+                android:textColorHint="@color/colorPrimary">
+
+                <MultiAutoCompleteTextView
+                    android:id="@+id/multiAutoCompleteTextView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="5dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_atualizarPerguntas_resposta5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Tipo de Resposta 5"
+                android:padding="5dp"
+                android:paddingLeft="13dp"
+                android:paddingTop="1dp"
+                android:paddingRight="13dp"
+                android:paddingBottom="4dp"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spin_atualizarPerguntas5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etd_atuzalizarPerguntas_pergunta6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Pergunta 6 "
+                android:padding="5dp"
+                android:textColorHint="@color/colorPrimary">
+
+                <MultiAutoCompleteTextView
+                    android:id="@+id/multiAutoCompleteTextView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="5dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_atualizarPerguntas_resposta6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Tipo de Resposta 6"
+                android:padding="5dp"
+                android:paddingLeft="13dp"
+                android:paddingTop="1dp"
+                android:paddingRight="13dp"
+                android:paddingBottom="4dp"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spin_atualizarPerguntas6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etd_atuzalizarPerguntas_pergunta7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Pergunta 7 "
+                android:padding="5dp"
+                android:textColorHint="@color/colorPrimary">
+
+                <MultiAutoCompleteTextView
+                    android:id="@+id/multiAutoCompleteTextView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="5dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_atualizarPerguntas_resposta7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Tipo de Resposta 7"
+                android:padding="5dp"
+                android:paddingLeft="13dp"
+                android:paddingTop="1dp"
+                android:paddingRight="13dp"
+                android:paddingBottom="4dp"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spin_atualizarPerguntas7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etd_atuzalizarPerguntas_pergunta8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Pergunta 8 "
+                android:padding="5dp"
+                android:textColorHint="@color/colorPrimary">
+
+                <MultiAutoCompleteTextView
+                    android:id="@+id/multiAutoCompleteTextView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="5dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_atualizarPerguntas_resposta8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Tipo de Resposta 8"
+                android:padding="5dp"
+                android:paddingLeft="13dp"
+                android:paddingTop="1dp"
+                android:paddingRight="13dp"
+                android:paddingBottom="4dp"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spin_atualizarPerguntas8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etd_atuzalizarPerguntas_pergunta9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Pergunta 9 "
+                android:padding="5dp"
+                android:textColorHint="@color/colorPrimary">
+
+                <MultiAutoCompleteTextView
+                    android:id="@+id/multiAutoCompleteTextView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="5dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_atualizarPerguntas_resposta9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Tipo de Resposta 9"
+                android:padding="5dp"
+                android:paddingLeft="13dp"
+                android:paddingTop="1dp"
+                android:paddingRight="13dp"
+                android:paddingBottom="4dp"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spin_atualizarPerguntas9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etd_atuzalizarPerguntas_pergunta10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Pergunta 10 "
+                android:padding="5dp"
+                android:textColorHint="@color/colorPrimary">
+
+                <MultiAutoCompleteTextView
+                    android:id="@+id/multiAutoCompleteTextView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="5dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_atualizarPerguntas_resposta10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Tipo de Resposta 10"
+                android:padding="5dp"
+                android:paddingLeft="13dp"
+                android:paddingTop="1dp"
+                android:paddingRight="13dp"
+                android:paddingBottom="4dp"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spin_atualizarPerguntas10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

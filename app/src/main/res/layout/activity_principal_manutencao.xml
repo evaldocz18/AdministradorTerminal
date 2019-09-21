@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.Administrador.Manutencao.PrincipalManutencaoActivity">
+
+    <Button
+        android:id="@+id/bt_pricipalManutencao_cadastrarDispositivoAdministrador"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="8dp"
+        android:onClick="clicouCadastrarDispositivoAdministrador"
+        android:padding="8dp"
+        android:text="cadastrar dispositivo administrador"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/bt_pricipalManutencao_cadastrarDispositivokiosque"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="8dp"
+        android:onClick="clicouCadastrarDIspositivoKiosque"
+        android:padding="8dp"
+        android:text="cadastrar dispositivo kiosque"
+        android:textSize="14sp" />
+
+</LinearLayout>

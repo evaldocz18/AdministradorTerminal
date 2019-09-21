@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.evaldo.firebase.activity.Administrador.Resultados.ResultadosOuvidoria.ResultadosOuvidoriaQuantitativos">
+
+    <TextView
+        android:id="@+id/tv_ouvidoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:text="Selecione a Opção que deseja ver em detalhes"
+        android:textColor="@color/vermelho" />
+
+    <Button
+        android:id="@+id/bt_exibir_resultados_detalhados_elogios"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="8dp"
+        android:onClick="clicouExibirElogiosDetalhados"
+        android:padding="8dp"
+        android:text="Exibir Elogios..." />
+
+    <Button
+        android:id="@+id/bt_exibir_resultados_detalhados_sugestoes"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="8dp"
+        android:onClick="clicouExibirSugestoesDetalhadas"
+        android:padding="8dp"
+        android:text="Exibir sugestoes..." />
+
+    <Button
+        android:id="@+id/bt_exibir_resultados_detalhados_reclamacoes"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="8dp"
+        android:onClick="clicouExibirRecclamacoesDetalhadas"
+        android:padding="8dp"
+        android:text="Exibir Reclamações..." />
+</LinearLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.Administrador.Questionarios.GerenciadorQuestionatio.NovoQuestionarioActivity">
+
+    <TextView
+        android:id="@+id/tv_perguntas_cadastradas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:text="Perguntas cadastradas = 0  (Limite de 10 perguntas)" />
+
+    <EditText
+        android:id="@+id/et_questionario_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:ems="10"
+        android:hint="Digite o titulo do questionario"
+        android:inputType="textPersonName"
+        android:padding="8dp"
+        android:textSize="14sp" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/mt_pergunta_cliente"
+        android:layout_width="match_parent"
+        android:layout_height="89dp"
+        android:layout_margin="8dp"
+        android:hint="Digite a sua pergunta aqui"
+        android:padding="8dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:text="Toque na imagem correspondente ao formato de de resposta que deseja receber do usuário"
+        android:textSize="12sp" />
+
+
+    <Button
+        android:id="@+id/bt_perguntas_finalizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:onClick="btFinalizarCadastro"
+        android:padding="8dp"
+        android:text="Finalizar Cadastro de Perguntas"
+        android:textSize="12sp" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/iv_3emotionDivulgacao"
+                android:layout_width="600dp"
+                android:layout_height="500dp"
+                android:layout_margin="8dp"
+                android:onClick="click3emotionDivulgacao"
+                android:padding="8dp"
+                android:visibility="visible"
+                app:srcCompat="@drawable/emotion3_divulcaao" />
+
+            <ImageView
+                android:id="@+id/iv_6emotion"
+                android:layout_width="600dp"
+                android:layout_height="500dp"
+                android:layout_margin="8dp"
+                android:contentDescription="TODO"
+                android:onClick="click6emotion"
+                android:padding="8dp"
+                android:visibility="visible"
+                app:srcCompat="@drawable/emotion6" />
+
+            <ImageView
+                android:id="@+id/iv_simounao"
+                android:layout_width="600dp"
+                android:layout_height="500dp"
+                android:layout_margin="8dp"
+                android:onClick="clickSimOuNao"
+                android:padding="8dp"
+                android:visibility="visible"
+                app:srcCompat="@drawable/pergunta_sim_nao" />
+
+            <ImageView
+                android:id="@+id/iv_aberta"
+                android:layout_width="600dp"
+                android:layout_height="500dp"
+                android:layout_margin="8dp"
+                android:onClick="clickAberta"
+                android:padding="8dp"
+                android:visibility="visible"
+                app:srcCompat="@drawable/comentario_aberto" />
+
+            <ImageView
+                android:id="@+id/iv_telefoneEEmail"
+                android:layout_width="600dp"
+                android:layout_height="500dp"
+                android:layout_margin="8dp"
+                android:onClick="clickTelefoneEEmail"
+                android:padding="8dp"
+                android:visibility="visible"
+                app:srcCompat="@drawable/pergunta_telefone_e_email" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.evaldo.firebase">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="FAFIC ADMINISTRADOR"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.Administrador.Login.LoginAdministradorActivity"></activity>
+        <activity android:name=".activity.Administrador.TerminalDePesquisa.VerificarOnlineKiosques.ListaKiosquesOnlineActivity" />
+        <activity android:name=".activity.Administrador.Resultados.ResultadosActivity" />
+        <activity android:name=".activity.Administrador.TerminalDePesquisa.KiosquesActivity" />
+        <activity android:name=".activity.Administrador.Questionarios.QuestionariosActivity" />
+        <activity android:name=".activity.Administrador.Resultados.ResultadosOuvidoria.ResultadosOuvidoriaDetalhados" />
+        <activity android:name=".activity.Administrador.Resultados.ResultadosOuvidoria.ResultadosOuvidoriaQuantitativos" />
+        <activity android:name=".activity.Administrador.Resultados.ResultadosQuestionarios.ExibirResultadosQuantitativosActivity" />
+        <activity android:name=".activity.Administrador.Manutencao.PrincipalManutencaoActivity" />
+        <activity android:name=".activity.Administrador.Manutencao.CadastrarDispostivoKiosqueActivity" />
+        <activity android:name=".activity.Administrador.TerminalDePesquisa.DefinirQuestionarioParaKiosques.ListarQuestionarioResumidasKiosqueActivity" />
+        <activity android:name=".activity.Administrador.TerminalDePesquisa.DefinirQuestionarioParaKiosques.ListarkiosquesActivity" />
+        <activity
+            android:name=".activity.Administrador.Resultados.ResultadosQuestionarios.ResultadosQuestionariosActivity"
+            android:label="@string/title_activity_listar_respostas_resumidas"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.Administrador.Questionarios.GerenciadorQuestionatio.ListarQuestionariosActivity"
+            android:label="@string/title_activity_geranciar_perguntas_mais"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.Administrador.Questionarios.GerenciadorQuestionatio.AtualizarPerguntasActivity"
+            android:label="ATUALIZAR QUESTIONÁRIO" />
+        <activity android:name=".activity.Cliente.TelaGerenciadorlActivity" />
+        <activity android:name=".activity.Administrador.Manutencao.CadastrarDispositivoAdministradorActivity" />
+        <activity android:name=".activity.Administrador.Questionarios.GerenciadorQuestionatio.NovoQuestionarioActivity" />
+        <activity
+            android:name=".activity.Administrador.Login.LoginDesenvolvedorActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".activity.Administrador.PrincipalActivity" />
+        <activity android:name=".activity.Administrador.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.Administrador.Resultados.ResultadosQuestionarios.ExibirResultadosDetalhadosActivity"
+            android:label="Questionários Cadastrados" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.exemplo.firebasecursods"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider" />
+        </provider>
+    </application>
+
+</manifest>

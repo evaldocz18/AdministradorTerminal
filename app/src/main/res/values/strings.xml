@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Firebase</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_geranciar_perguntas_mais">GeranciarPerguntasMaisActivity</string>
+
+    <string-array name="lista_de_tipos_de_respostas">
+
+        <item>Tela não selecionada (vazio)</item>
+        <item>6 Emotions</item>
+        <item>(Sim) ou (Não)</item>
+        <item>Telefone e Email</item>
+        <item>Resposta Aberta</item>
+
+    </string-array>
+
+    <string-array name="lista_de_tipos_de_respostas_primaira_tela">
+
+        <item>Princial 3 Emotions e Ouvidoria</item>
+
+
+    </string-array>
+
+    <string-array name="lista_de_status_dos_dispositivos">
+
+        <item>ATIVADO</item>
+        <item>DESATIVADO</item>
+        <item>SUSPENSO</item>
+
+    </string-array>
+
+    <string name="title_activity_listar_respostas_resumidas">ListarRespostasResumidasActivity
+    </string>
+
+</resources>
