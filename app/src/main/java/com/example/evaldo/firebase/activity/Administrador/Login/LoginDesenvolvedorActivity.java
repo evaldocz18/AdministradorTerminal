@@ -20,8 +20,8 @@ public class LoginDesenvolvedorActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_desenvolvedor);
 
-        nome = findViewById(R.id.et_nome_supervisor);
-        senha = findViewById(R.id.et_senha_supervisor);
+        nome = findViewById(R.id.et_nome_desenvolvedor);
+        senha = findViewById(R.id.et_senha_desenvolvedor);
 
     }
 

@@ -1,6 +1,8 @@
 package com.example.evaldo.firebase.activity.Administrador.util;
 
 import android.app.Activity;
+import android.content.Context;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
@@ -16,7 +18,7 @@ public class Autentication {
     private static Autentication instance;
     private Activity context;
 
-    private Autentication(){
+    public Autentication(){
         mAuth = FirebaseAuth.getInstance();
     }
 
@@ -28,7 +30,7 @@ public class Autentication {
     }
 
 
-    public FirebaseUser createUser(final String email, final String password){
+    public FirebaseUser createUser(final String email, final String password, final Context contextToast){
 
         final FirebaseUser[] user = {null};
         final Boolean[] success = {null};
@@ -39,10 +41,14 @@ public class Autentication {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
+                            Toast.makeText(contextToast, "Usuário Cadastrado com Sucesso", Toast.LENGTH_LONG).show();
+
                             user[0] = mAuth.getCurrentUser();
                             success[0] = true;
                         } else {
                             // If sign in fails, display a message to the user.
+                            Toast.makeText(contextToast, "Erro ao Cadastrar Usuário", Toast.LENGTH_LONG).show();
+
                             success[0] = false;
                         }
 
@@ -50,13 +56,13 @@ public class Autentication {
                     }
                 });
 
-        while (success[0] == null){
+        /*while (success[0] == null){
             try {
                 Thread.sleep(50);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        }
+        }*/
 
         return user[0];
     }
@@ -84,13 +90,13 @@ public class Autentication {
                     }
                 });
 
-        while (success[0] == null){
+        /*while (success[0] == null){
             try {
                 Thread.sleep(50);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        }
+        }*/
 
         return user[0];
     }

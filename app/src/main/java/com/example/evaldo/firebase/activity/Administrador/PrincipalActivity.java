@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.evaldo.firebase.R;
+import com.example.evaldo.firebase.activity.Administrador.Login.LoginAdministradorActivity;
 import com.example.evaldo.firebase.activity.Administrador.Questionarios.QuestionariosActivity;
 import com.example.evaldo.firebase.activity.Administrador.Resultados.ResultadosActivity;
 import com.example.evaldo.firebase.activity.Administrador.Login.LoginDesenvolvedorActivity;
@@ -65,6 +66,11 @@ public class PrincipalActivity extends AppCompatActivity {
 
     public void click_questionarios(View view) {
         Intent intent = new Intent(this, QuestionariosActivity.class);
+        startActivity(intent);
+    }
+
+    public void click_principal_logar(View view) {
+        Intent intent = new Intent(this, LoginAdministradorActivity.class);
         startActivity(intent);
     }
 }
