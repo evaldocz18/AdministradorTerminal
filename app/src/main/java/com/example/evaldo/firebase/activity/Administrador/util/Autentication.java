@@ -69,7 +69,7 @@ public class Autentication {
 
 
 
-    public FirebaseUser login(String email, String password){
+    public FirebaseUser login(final String email, final String password, final Context contextToast){
 
         final FirebaseUser[] user = {null};
         final Boolean[] success = {null};
@@ -81,8 +81,11 @@ public class Autentication {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
                             user[0] = mAuth.getCurrentUser();
+                            Toast.makeText(contextToast, "Login Efetuado com Sucesso", Toast.LENGTH_LONG).show();
+
                             success[0] = true;
                         } else {
+                            Toast.makeText(contextToast, "Não foi possossivel logar", Toast.LENGTH_LONG).show();
                             success[0] = false;
                         }
 

@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.Administrador.Login.LoginAdministradorActivity"></activity>
+        <activity android:name=".activity.Administrador.DefinirImagens.DefinirImagemTerminaisPesquisaActivity"></activity>
+        <activity android:name=".activity.Administrador.Login.LoginAdministradorActivity" />
         <activity android:name=".activity.Administrador.TerminalDePesquisa.VerificarOnlineKiosques.ListaKiosquesOnlineActivity" />
         <activity android:name=".activity.Administrador.Resultados.ResultadosActivity" />
         <activity android:name=".activity.Administrador.TerminalDePesquisa.KiosquesActivity" />

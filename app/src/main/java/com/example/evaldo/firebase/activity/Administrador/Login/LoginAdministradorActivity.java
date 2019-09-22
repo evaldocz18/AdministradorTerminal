@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.evaldo.firebase.R;
+import com.example.evaldo.firebase.activity.Administrador.Classes.Administrador;
 import com.example.evaldo.firebase.activity.Administrador.util.Autentication;
 import com.example.evaldo.firebase.activity.Administrador.util.Storage;
 import com.google.firebase.auth.FirebaseUser;
@@ -20,8 +21,8 @@ import java.util.List;
 public class LoginAdministradorActivity extends AppCompatActivity {
 
     private EditText EtNome, EtSenha;
-    public Context contextLoginAdministrador;
     Autentication autentication = Autentication.getInstance(LoginAdministradorActivity.this);
+    public static Administrador administrador;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,26 +35,21 @@ public class LoginAdministradorActivity extends AppCompatActivity {
     }
 
     public void clickLoginAdministrador(View view) {
+        String email = EtNome.getText().toString();
+        String senha = EtSenha.getText().toString();
+        FirebaseUser user;
 
-        AsyncTask.execute(new Runnable() {
-            @Override
-            public void run() {
-                Autentication autentication = Autentication.getInstance(LoginAdministradorActivity.this);
-                FirebaseUser user = autentication.login(EtNome.getText().toString(), EtSenha.getText().toString());
+        if (!(senha.equals("") || email.equals(""))) {
 
-                if (user != null) {
+            autentication = Autentication.getInstance(LoginAdministradorActivity.this);
+            user = autentication.login(EtNome.getText().toString(), EtSenha.getText().toString(), LoginAdministradorActivity.this);
 
-                    Storage storage = Storage.getInstance();
-                    String filePath = "";
-                    String storagePath = "";
+        } else {
 
-                    if (storage.download(filePath, storagePath)) {
-                        System.out.println("Arquivo baixado com sucesso");
-                    }
-                }
+            Toast.makeText(this, "Preencha os campos de email e senha", Toast.LENGTH_LONG).show();
 
-            }
-        });
+        }
+
     }
 
     public void clickCadastrarAdministrador(View view) {
@@ -68,6 +64,7 @@ public class LoginAdministradorActivity extends AppCompatActivity {
 
             autentication.createUser(EtNome.getText().toString(), EtSenha.getText().toString(), LoginAdministradorActivity.this);
         }
+
 
     }
 
