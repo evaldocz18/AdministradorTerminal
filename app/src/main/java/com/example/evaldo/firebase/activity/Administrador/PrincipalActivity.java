@@ -33,6 +33,8 @@ public class PrincipalActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_principal, menu);
 
         return super.onCreateOptionsMenu(menu);
+
+        //teste comit
     }
 
     //////////////////////////MENU CARREGANDO//////////////////////////////////////////////////////////////////////////////////////
