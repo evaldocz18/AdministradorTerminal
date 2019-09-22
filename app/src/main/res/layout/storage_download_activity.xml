@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.evaldo.firebase.activity.Administrador.Storage.StorageDownloadActivity">
+
+    <ImageView
+        android:id="@+id/imagemView_StorageDownload"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_StorageDownload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:foregroundGravity="center_vertical|center|center_horizontal" />
+
+    <Button
+        android:id="@+id/button_StorageDownload"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imagemView_StorageDownload"
+        android:layout_centerHorizontal="true"
+        android:onClick="click_storageDownoad"
+        android:text="Download"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/button_StorageRemover"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/button_StorageDownload"
+        android:layout_centerHorizontal="true"
+        android:onClick="click_storageRemover"
+        android:text="Download"
+        android:textSize="17sp" />
+
+</RelativeLayout>

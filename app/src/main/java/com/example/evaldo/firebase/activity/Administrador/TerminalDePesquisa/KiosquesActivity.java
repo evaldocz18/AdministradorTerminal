@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.evaldo.firebase.R;
+import com.example.evaldo.firebase.activity.Administrador.TerminalDePesquisa.DefinirImagens.DefinirImagemTerminaisPesquisaActivity;
 import com.example.evaldo.firebase.activity.Administrador.TerminalDePesquisa.DefinirQuestionarioParaKiosques.ListarQuestionarioResumidasKiosqueActivity;
 
 public class KiosquesActivity extends AppCompatActivity {
@@ -37,5 +38,10 @@ public class KiosquesActivity extends AppCompatActivity {
     public void click_kiosque_verifica_online(View view) {
         Toast.makeText(this, "Esta função será implementada na proxima versão do app" , Toast.LENGTH_LONG).show();
 
+    }
+
+    public void click_kiosque_definir_imagem(View view) {
+        Intent intent = new Intent(this, DefinirImagemTerminaisPesquisaActivity.class);
+        startActivity(intent);
     }
 }

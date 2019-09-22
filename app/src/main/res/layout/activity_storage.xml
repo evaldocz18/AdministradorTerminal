@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.evaldo.firebase.activity.Administrador.TerminalDePesquisa.DefinirImagens.DefinirImagemTerminaisPesquisaActivity">
+    tools:context="com.example.evaldo.firebase.activity.Administrador.Storage.StorageActivity">
 
 </androidx.constraintlayout.widget.ConstraintLayout>

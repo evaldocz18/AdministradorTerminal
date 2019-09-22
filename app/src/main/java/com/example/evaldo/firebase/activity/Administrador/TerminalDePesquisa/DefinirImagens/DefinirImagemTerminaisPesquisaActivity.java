@@ -1,4 +1,4 @@
-package com.example.evaldo.firebase.activity.Administrador.DefinirImagens;
+package com.example.evaldo.firebase.activity.Administrador.TerminalDePesquisa.DefinirImagens;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,8 +10,11 @@ import com.example.evaldo.firebase.activity.Administrador.Login.LoginAdministrad
 import com.example.evaldo.firebase.activity.Administrador.util.Autentication;
 import com.example.evaldo.firebase.activity.Administrador.util.Storage;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.storage.FirebaseStorage;
 
 public class DefinirImagemTerminaisPesquisaActivity extends AppCompatActivity {
+
+    FirebaseStorage storage = FirebaseStorage.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

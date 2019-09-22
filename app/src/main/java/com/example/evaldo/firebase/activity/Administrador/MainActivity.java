@@ -9,16 +9,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Toast;
 
 import com.example.evaldo.firebase.R;
-import com.example.evaldo.firebase.activity.Administrador.Classes.DispositivoAdministrador;
-import com.example.evaldo.firebase.activity.Administrador.Classes.ResultadosOuvidoria;
-import com.example.evaldo.firebase.activity.Cliente.TelaGerenciadorlActivity;
 import com.example.evaldo.firebase.activity.Administrador.util.Permissao;
-
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,17 +23,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         permissao();
-        //pegarIDDispositivo();
         chamarClasseTeste();
 
     }
-
-    private String pegarIDDispositivo() {
-        String android_id = Settings.Secure.getString(getApplicationContext().getContentResolver(), Settings.Secure.ANDROID_ID);
-        System.out.println(pegarIDDispositivo());
-        return android_id;
-    }
-
 
     private void chamarClasseTeste() {
         finish();
