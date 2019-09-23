@@ -3,7 +3,6 @@ package com.example.evaldo.firebase.activity.Administrador;
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.provider.Settings;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,6 +11,8 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.example.evaldo.firebase.R;
+import com.example.evaldo.firebase.activity.Administrador.Login.LoginAdministradorActivity;
+import com.example.evaldo.firebase.activity.Administrador.Storage.StorageActivity;
 import com.example.evaldo.firebase.activity.Administrador.util.Permissao;
 
 public class MainActivity extends AppCompatActivity {
