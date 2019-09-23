@@ -15,6 +15,7 @@ import com.example.evaldo.firebase.activity.Administrador.Login.LoginAdministrad
 import com.example.evaldo.firebase.activity.Administrador.Questionarios.QuestionariosActivity;
 import com.example.evaldo.firebase.activity.Administrador.Resultados.ResultadosActivity;
 import com.example.evaldo.firebase.activity.Administrador.Login.LoginDesenvolvedorActivity;
+import com.example.evaldo.firebase.activity.Administrador.Storage.StorageActivity;
 import com.example.evaldo.firebase.activity.Administrador.TerminalDePesquisa.KiosquesActivity;
 
 
@@ -71,6 +72,11 @@ public class PrincipalActivity extends AppCompatActivity {
 
     public void click_principal_logar(View view) {
         Intent intent = new Intent(this, LoginAdministradorActivity.class);
+        startActivity(intent);
+    }
+
+    public void click_principal_storage(View view) {
+        Intent intent = new Intent(this, StorageActivity.class);
         startActivity(intent);
     }
 }
