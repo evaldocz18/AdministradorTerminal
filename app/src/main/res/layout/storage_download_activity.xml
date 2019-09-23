@@ -38,7 +38,7 @@
         android:layout_below="@+id/button_StorageDownload"
         android:layout_centerHorizontal="true"
         android:onClick="click_storageRemover"
-        android:text="Download"
+        android:text="Remover"
         android:textSize="17sp" />
 
 </RelativeLayout>

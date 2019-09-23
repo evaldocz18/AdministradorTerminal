@@ -36,8 +36,14 @@ public class StorageDownloadActivity extends AppCompatActivity {
     }
 
     public void click_storageDownoad(View view) {
-        Intent intent = new Intent(this, StorageDownloadActivity.class);
-        startActivity(intent);
+
+        download_imagem_1();
+
+    }
+
+    private void download_imagem_1() {
+
+        String url = "https://firebasestorage.googleapis.com/v0/b/projeto-teste-d960c.appspot.com/o/imagem%2Fexpo_negocios.png?alt=media&token=a9859075-dbe0-477c-91cc-17323243dc02";
 
     }
 
@@ -70,4 +76,5 @@ public class StorageDownloadActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
 }
