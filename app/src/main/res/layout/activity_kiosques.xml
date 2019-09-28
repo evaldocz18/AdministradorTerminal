@@ -20,27 +20,33 @@
         android:id="@+id/bt_kiosque_definirImagem"
         android:layout_width="match_parent"
         android:layout_height="70dp"
+        android:clickable="false"
         android:onClick="click_kiosque_definir_imagem"
         android:padding="8dp"
         android:text="Definir Imagem para Terminais de Pesquisa"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:visibility="invisible" />
 
     <Button
         android:id="@+id/bt_kiosque_verifica_online"
         android:layout_width="match_parent"
         android:layout_height="70dp"
+        android:clickable="false"
         android:onClick="click_kiosque_verifica_online"
         android:padding="8dp"
         android:text="Verificar se o Terminal de Pesquisa está online"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:visibility="invisible" />
 
     <Button
         android:id="@+id/bt_kiosque_cadastrar"
         android:layout_width="match_parent"
         android:layout_height="70dp"
+        android:clickable="false"
         android:onClick="click_kiosque_cadastrar"
         android:padding="8dp"
         android:text="Cadastrar Terminal de Pesquisa"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:visibility="invisible" />
 
 </LinearLayout>

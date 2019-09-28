@@ -71,7 +71,8 @@
             <ImageView
                 android:id="@+id/iv_3emotionDivulgacao"
                 android:layout_width="600dp"
-                android:layout_height="500dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center_horizontal"
                 android:layout_margin="8dp"
                 android:onClick="click3emotionDivulgacao"
                 android:padding="8dp"
@@ -81,7 +82,8 @@
             <ImageView
                 android:id="@+id/iv_6emotion"
                 android:layout_width="600dp"
-                android:layout_height="500dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center_horizontal"
                 android:layout_margin="8dp"
                 android:contentDescription="TODO"
                 android:onClick="click6emotion"
@@ -92,7 +94,8 @@
             <ImageView
                 android:id="@+id/iv_simounao"
                 android:layout_width="600dp"
-                android:layout_height="500dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center_horizontal"
                 android:layout_margin="8dp"
                 android:onClick="clickSimOuNao"
                 android:padding="8dp"
@@ -102,7 +105,8 @@
             <ImageView
                 android:id="@+id/iv_aberta"
                 android:layout_width="600dp"
-                android:layout_height="500dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center_horizontal"
                 android:layout_margin="8dp"
                 android:onClick="clickAberta"
                 android:padding="8dp"
@@ -112,7 +116,8 @@
             <ImageView
                 android:id="@+id/iv_telefoneEEmail"
                 android:layout_width="600dp"
-                android:layout_height="500dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center_horizontal"
                 android:layout_margin="8dp"
                 android:onClick="clickTelefoneEEmail"
                 android:padding="8dp"
