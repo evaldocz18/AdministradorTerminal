@@ -1,7 +1,7 @@
 package com.example.evaldo.firebase.activity.Administrador.Classes;
 
 public class DispositivoKiosque {
-    String nomeDispositivo,idDispositivo, status,key, dataAtivacao, questionarioAtual ;
+    String nomeDispositivo,idDispositivo, status,key, dataAtivacao, questionarioAtual, imagemDivulgacaoEPergunta[], ultimaVezOnline[], imagemDivulgacao[] ;
 
     public DispositivoKiosque(String nomeDispositivo, String idDispositivo, String status, String key, String dataAtivacao, String questionarioAtual) {
         this.nomeDispositivo = nomeDispositivo;
@@ -10,6 +10,18 @@ public class DispositivoKiosque {
         this.key = key;
         this.dataAtivacao = dataAtivacao;
         this.questionarioAtual = questionarioAtual;
+    }
+
+    public DispositivoKiosque(String nomeDispositivo, String idDispositivo, String status, String key, String dataAtivacao, String questionarioAtual, String[] imagemDivulgacaoEPergunta, String[] ultimaVezOnline, String[] imagemDivulgacao) {
+        this.nomeDispositivo = nomeDispositivo;
+        this.idDispositivo = idDispositivo;
+        this.status = status;
+        this.key = key;
+        this.dataAtivacao = dataAtivacao;
+        this.questionarioAtual = questionarioAtual;
+        this.imagemDivulgacaoEPergunta = imagemDivulgacaoEPergunta;
+        this.ultimaVezOnline = ultimaVezOnline;
+        this.imagemDivulgacao = imagemDivulgacao;
     }
 
     public DispositivoKiosque(){}
