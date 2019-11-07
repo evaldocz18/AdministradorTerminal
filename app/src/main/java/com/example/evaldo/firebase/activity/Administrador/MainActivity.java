@@ -11,8 +11,6 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.example.evaldo.firebase.R;
-import com.example.evaldo.firebase.activity.Administrador.Login.LoginAdministradorActivity;
-import com.example.evaldo.firebase.activity.Administrador.Storage.StorageActivity;
 import com.example.evaldo.firebase.activity.Administrador.util.Permissao;
 
 public class MainActivity extends AppCompatActivity {

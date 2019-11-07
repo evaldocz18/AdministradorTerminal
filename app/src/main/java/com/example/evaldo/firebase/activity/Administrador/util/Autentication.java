@@ -8,13 +8,13 @@ import androidx.annotation.NonNull;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
+//import com.google.firebase.auth.AuthResult;
+//import com.google.firebase.auth.FirebaseAuth;
+///import com.google.firebase.auth.FirebaseUser;
 
 public class Autentication {
 
-    private FirebaseAuth mAuth;
+    /*private FirebaseAuth mAuth;
     private static Autentication instance;
     private Activity context;
 
@@ -62,14 +62,14 @@ public class Autentication {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        }*/
+        }
 
         return user[0];
-    }
+    }*/
 
 
 
-    public FirebaseUser login(final String email, final String password, final Context contextToast){
+   /* public FirebaseUser login(final String email, final String password, final Context contextToast){
 
         final FirebaseUser[] user = {null};
         final Boolean[] success = {null};
@@ -99,8 +99,8 @@ public class Autentication {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        }*/
+        }
 
         return user[0];
-    }
+    }*/
 }

@@ -2,14 +2,10 @@ package com.example.evaldo.firebase.activity.Administrador.TerminalDePesquisa.De
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.AsyncTask;
 import android.os.Bundle;
 
 import com.example.evaldo.firebase.R;
-import com.example.evaldo.firebase.activity.Administrador.Login.LoginAdministradorActivity;
-import com.example.evaldo.firebase.activity.Administrador.util.Autentication;
-import com.example.evaldo.firebase.activity.Administrador.util.Storage;
-import com.google.firebase.auth.FirebaseUser;
+//import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.storage.FirebaseStorage;
 
 public class DefinirImagemTerminaisPesquisaActivity extends AppCompatActivity {
