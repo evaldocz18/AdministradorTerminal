@@ -19,15 +19,15 @@
         <activity android:name=".activity.Administrador.TerminalDePesquisa.DefinirImagens.DefinirImagemTerminaisPesquisaActivity" />
         <activity android:name=".activity.Administrador.TerminalDePesquisa.VerificarOnlineKiosques.ListaKiosquesOnlineActivity" />
         <activity android:name=".activity.Administrador.Resultados.ResultadosActivity" />
-        <activity android:name=".activity.Administrador.TerminalDePesquisa.KiosquesActivity" />
+        <activity android:name=".activity.Administrador.TerminalDePesquisa.TerminaisActivity" />
         <activity android:name=".activity.Administrador.Questionarios.QuestionariosActivity" />
         <activity android:name=".activity.Administrador.Resultados.ResultadosOuvidoria.ResultadosOuvidoriaDetalhados" />
         <activity android:name=".activity.Administrador.Resultados.ResultadosOuvidoria.ResultadosOuvidoriaQuantitativos" />
         <activity android:name=".activity.Administrador.Resultados.ResultadosQuestionarios.ExibirResultadosQuantitativosActivity" />
         <activity android:name=".activity.Administrador.Manutencao.PrincipalManutencaoActivity" />
         <activity android:name=".activity.Administrador.Manutencao.CadastrarTerminalDePesquisa" />
-        <activity android:name=".activity.Administrador.TerminalDePesquisa.DefinirQuestionarioParaKiosques.ListarQuestionarioResumidasKiosqueActivity" />
-        <activity android:name=".activity.Administrador.TerminalDePesquisa.DefinirQuestionarioParaKiosques.ListarkiosquesActivity" />
+        <activity android:name=".activity.Administrador.TerminalDePesquisa.DefinirQuestionarioParaTerminais.ListarQuestionarioResumidasTerminalActivity" />
+        <activity android:name=".activity.Administrador.TerminalDePesquisa.DefinirQuestionarioParaTerminais.ListarTerminaisActivity" />
         <activity
             android:name=".activity.Administrador.Resultados.ResultadosQuestionarios.ResultadosQuestionariosActivity"
             android:label="@string/title_activity_listar_respostas_resumidas"

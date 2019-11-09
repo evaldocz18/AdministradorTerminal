@@ -16,7 +16,7 @@ import com.example.evaldo.firebase.activity.Administrador.Questionarios.Question
 import com.example.evaldo.firebase.activity.Administrador.Resultados.ResultadosActivity;
 import com.example.evaldo.firebase.activity.Administrador.Login.LoginDesenvolvedorActivity;
 import com.example.evaldo.firebase.activity.Administrador.Storage.StorageActivity;
-import com.example.evaldo.firebase.activity.Administrador.TerminalDePesquisa.KiosquesActivity;
+import com.example.evaldo.firebase.activity.Administrador.TerminalDePesquisa.TerminaisActivity;
 import com.example.evaldo.firebase.activity.Administrador.auth.Auth;
 
 
@@ -63,7 +63,7 @@ public class PrincipalActivity extends AppCompatActivity {
     }
 
     public void click_kiosques(View view) {
-        Intent intent = new Intent(this, KiosquesActivity.class);
+        Intent intent = new Intent(this, TerminaisActivity.class);
         startActivity(intent);
     }
 
