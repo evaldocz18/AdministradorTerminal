@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity.Administrador.Manutencao.CadastrarDispostivoKiosqueActivity">
+    tools:context=".activity.Administrador.Manutencao.CadastrarTerminalDePesquisa">
 
     <TextView
         android:id="@+id/tv_cadastrarDispositivoKiosque_idDispositivo"

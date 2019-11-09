@@ -25,7 +25,7 @@
         <activity android:name=".activity.Administrador.Resultados.ResultadosOuvidoria.ResultadosOuvidoriaQuantitativos" />
         <activity android:name=".activity.Administrador.Resultados.ResultadosQuestionarios.ExibirResultadosQuantitativosActivity" />
         <activity android:name=".activity.Administrador.Manutencao.PrincipalManutencaoActivity" />
-        <activity android:name=".activity.Administrador.Manutencao.CadastrarDispostivoKiosqueActivity" />
+        <activity android:name=".activity.Administrador.Manutencao.CadastrarTerminalDePesquisa" />
         <activity android:name=".activity.Administrador.TerminalDePesquisa.DefinirQuestionarioParaKiosques.ListarQuestionarioResumidasKiosqueActivity" />
         <activity android:name=".activity.Administrador.TerminalDePesquisa.DefinirQuestionarioParaKiosques.ListarkiosquesActivity" />
         <activity
@@ -39,7 +39,6 @@
         <activity
             android:name=".activity.Administrador.Questionarios.GerenciadorQuestionatio.AtualizarPerguntasActivity"
             android:label="ATUALIZAR QUESTIONÁRIO" />
-        <activity android:name=".activity.Administrador.Manutencao.CadastrarDispositivoAdministradorActivity" />
         <activity android:name=".activity.Administrador.Questionarios.GerenciadorQuestionatio.NovoQuestionarioActivity" />
         <activity
             android:name=".activity.Administrador.Login.LoginDesenvolvedorActivity"

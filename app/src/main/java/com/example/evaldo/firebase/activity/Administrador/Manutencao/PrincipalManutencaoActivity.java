@@ -15,13 +15,8 @@ public class PrincipalManutencaoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_principal_manutencao);
     }
 
-    public void clicouCadastrarDispositivoAdministrador(View view) {
-        Intent intent = new Intent(this, CadastrarDispositivoAdministradorActivity.class);
-        startActivity(intent);
-    }
-
-    public void clicouCadastrarDIspositivoKiosque(View view) {
-        Intent intent = new Intent(this, CadastrarDispostivoKiosqueActivity.class);
+    public void clicouAtivarTerminalDePesquisa(View view) {
+        Intent intent = new Intent(this, CadastrarTerminalDePesquisa.class);
         startActivity(intent);
     }
 }

@@ -8,23 +8,13 @@
     tools:context=".activity.Administrador.Manutencao.PrincipalManutencaoActivity">
 
     <Button
-        android:id="@+id/bt_pricipalManutencao_cadastrarDispositivoAdministrador"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_margin="8dp"
-        android:onClick="clicouCadastrarDispositivoAdministrador"
-        android:padding="8dp"
-        android:text="cadastrar dispositivo administrador"
-        android:textSize="14sp" />
-
-    <Button
         android:id="@+id/bt_pricipalManutencao_cadastrarDispositivokiosque"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_margin="8dp"
-        android:onClick="clicouCadastrarDIspositivoKiosque"
+        android:onClick="clicouAtivarTerminalDePesquisa"
         android:padding="8dp"
-        android:text="cadastrar dispositivo kiosque"
+        android:text="Ativar Terminal de Pesquisa"
         android:textSize="14sp" />
 
 </LinearLayout>
