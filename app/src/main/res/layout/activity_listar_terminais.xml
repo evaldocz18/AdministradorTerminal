@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_ListarTerminal_Nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:text="Selecione um Terminal de Pesquisa da Lista"
+        android:textColor="@color/vermelho"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_ListarTerminal_novoEAtual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:textColor="@color/preto"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/bt_ListarTerminal_Confirmar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:onClick="clikouConfirmarQuestionarioTerminal"
+        android:padding="8dp"
+        android:text="Confirmar"
+        android:textSize="18sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_terminais"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="8dp" />
+
+</LinearLayout>
