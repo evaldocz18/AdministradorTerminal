@@ -50,11 +50,11 @@ public class CadastrarTerminalDePesquisa extends AppCompatActivity {
         } else if (false) {
             Toast.makeText(this, "Por favor insira o status do Dispositivo", Toast.LENGTH_LONG).show();
         }else {
-            DispositivosKiosqueReferencia.child(pegarIDDispositivo()).child("idDispositivo").setValue(pegarIDDispositivo());
-            DispositivosKiosqueReferencia.child(pegarIDDispositivo()).child("nomeDispositivo").setValue(nomeDispositivoKiosque.getText().toString());
-            DispositivosKiosqueReferencia.child(pegarIDDispositivo()).child("dataAtivacao").setValue(dataCadastro);
-            DispositivosKiosqueReferencia.child(pegarIDDispositivo()).child("status").setValue(statusDispositivoKiosque.getSelectedItem().toString());
-            DispositivosKiosqueReferencia.child(pegarIDDispositivo()).child("questionarioAtual").setValue("SEM QUESTIONARIO");
+            DispositivosKiosqueReferencia.child("id").child(pegarIDDispositivo()).child("idDispositivo").setValue(pegarIDDispositivo());
+            DispositivosKiosqueReferencia.child("id").child(pegarIDDispositivo()).child("nomeDispositivo").setValue(nomeDispositivoKiosque.getText().toString());
+            DispositivosKiosqueReferencia.child("id").child(pegarIDDispositivo()).child("dataAtivacao").setValue(dataCadastro);
+            DispositivosKiosqueReferencia.child("id").child(pegarIDDispositivo()).child("status").setValue(statusDispositivoKiosque.getSelectedItem().toString());
+            DispositivosKiosqueReferencia.child("id").child(pegarIDDispositivo()).child("questionarioAtual").setValue("SEM QUESTIONARIO");
 
             pegarIDDispositivo();
 

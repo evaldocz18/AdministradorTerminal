@@ -81,12 +81,12 @@ public class ListarTerminaisActivity extends AppCompatActivity {
     }
 
     public void iniciarFirebaseDispositivosTerminais() {
-        DatabaseReference databaseReferencia = FirebaseDatabase.getInstance().getReference();
-        DatabaseReference dispositivosTerminalReferencia = databaseReferencia.child("Terminais de Pesquisa");
+       /* DatabaseReference dispositivosTerminalReferencia = databaseReferencia.child("Terminais de Pesquisa");
+        Query query = referenceTerminaisPesquisa.orderByChild("idDispositivo").equalTo("c63fd0981626ca24");*/
+        //DatabaseReference databaseReferencia = FirebaseDatabase.getInstance().getReference();
 
+        DatabaseReference referenceTerminal = FirebaseDatabase.getInstance().getReference().child("Terminais de Pesquisa").child("id");
 
-        DatabaseReference referenceTerminal = FirebaseDatabase.getInstance().getReference().child("Terminais de Pesquisa");
-        //Query query = referenceTerminaisPesquisa.orderByChild("idDispositivo").equalTo("c63fd0981626ca24");
 
         referenceTerminal.addValueEventListener(new ValueEventListener() {
 
@@ -158,7 +158,7 @@ public class ListarTerminaisActivity extends AppCompatActivity {
             Toast.makeText(this, "Por favor escolha um dispositivo da lista",Toast.LENGTH_LONG).show();
         }else {
             DatabaseReference databaseReferencia = FirebaseDatabase.getInstance().getReference();
-            DatabaseReference terminaisPesquisaReferencia = databaseReferencia.child("Terminais de Pesquisa");
+            DatabaseReference terminaisPesquisaReferencia = databaseReferencia.child("Terminais de Pesquisa").child("id");
 
             terminaisPesquisaReferencia.child(terminalPesquisaFinal.getIdDispositivo()).child("questionarioAtual").setValue(perguntasQuestionario.getNomeQuestionario());
 
