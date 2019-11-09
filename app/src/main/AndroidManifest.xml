@@ -39,7 +39,6 @@
         <activity
             android:name=".activity.Administrador.Questionarios.GerenciadorQuestionatio.AtualizarPerguntasActivity"
             android:label="ATUALIZAR QUESTIONÁRIO" />
-        <activity android:name=".activity.Cliente.TelaGerenciadorlActivity" />
         <activity android:name=".activity.Administrador.Manutencao.CadastrarDispositivoAdministradorActivity" />
         <activity android:name=".activity.Administrador.Questionarios.GerenciadorQuestionatio.NovoQuestionarioActivity" />
         <activity
