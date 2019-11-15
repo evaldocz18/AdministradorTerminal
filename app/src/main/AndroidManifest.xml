@@ -12,8 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.Administrador.Login.CadastrarAdministradorActivity"></activity>
-        <activity android:name=".activity.Administrador.Login.LoginAdministradorctivity" />
+        <activity android:name=".activity.Administrador.Login.RedefinirSenhaUsuarioActivity"></activity>
+        <activity android:name=".activity.Administrador.Login.CadastrarUsuarioActivity" />
+        <activity android:name=".activity.Administrador.Login.LoginUsuarioActivity" />
         <activity android:name=".activity.Administrador.Storage.StorageActivity" />
         <activity android:name=".activity.Administrador.Storage.StorageDownloadActivity" />
         <activity android:name=".activity.Administrador.TerminalDePesquisa.DefinirImagens.DefinirImagemTerminaisPesquisaActivity" />

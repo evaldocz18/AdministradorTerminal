@@ -34,7 +34,7 @@ public class DefinirImagemTerminaisPesquisaActivity extends AppCompatActivity {
             @Override
             public void run() {
                 Autentication autentication = Autentication.getInstance(LoginAdministradorActivity.this);
-                FirebaseUser user = autentication.login(EtNome.getText().toString(), EtSenha.getText().toString());
+                FirebaseUser user = autentication.entrar(EtNome.getText().toString(), EtSenha.getText().toString());
 
                 if (user != null) {
 

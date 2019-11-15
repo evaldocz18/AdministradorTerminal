@@ -69,7 +69,7 @@ public class Autentication {
 
 
 
-   /* public FirebaseUser login(final String email, final String password, final Context contextToast){
+   /* public FirebaseUser entrar(final String email, final String password, final Context contextToast){
 
         final FirebaseUser[] user = {null};
         final Boolean[] success = {null};

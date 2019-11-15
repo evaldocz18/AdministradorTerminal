@@ -11,8 +11,9 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.evaldo.firebase.R;
-import com.example.evaldo.firebase.activity.Administrador.Login.LoginAdministradorctivity;
+import com.example.evaldo.firebase.activity.Administrador.Login.LoginUsuarioActivity;
 import com.example.evaldo.firebase.activity.Administrador.Manutencao.PrincipalManutencaoActivity;
+import com.example.evaldo.firebase.activity.Administrador.Questionarios.NovoQuestionarioActivity;
 import com.example.evaldo.firebase.activity.Administrador.Resultados.ResultadosActivity;
 import com.example.evaldo.firebase.activity.Administrador.Storage.StorageActivity;
 import com.example.evaldo.firebase.activity.Administrador.TerminalDePesquisa.TerminaisActivity;
@@ -67,7 +68,7 @@ public class PrincipalActivity extends AppCompatActivity {
     }
 
     public void click_questionarios(View view) {
-        Intent intent = new Intent(this, QuestionariosActivity.class);
+        Intent intent = new Intent(this, NovoQuestionarioActivity.class);
         startActivity(intent);
     }
 
@@ -84,7 +85,7 @@ public class PrincipalActivity extends AppCompatActivity {
     public void click_principal_logar(View view) {
         Auth.getInstance().logout();
         finish();
-        Intent intent = new Intent(this, LoginAdministradorctivity.class);
+        Intent intent = new Intent(this, LoginUsuarioActivity.class);
         startActivity(intent);
     }
 }

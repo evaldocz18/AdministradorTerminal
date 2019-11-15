@@ -14,12 +14,12 @@ import com.example.evaldo.firebase.activity.Administrador.auth.OnAuth;
 import com.example.evaldo.firebase.activity.Administrador.Classes.Usuario;
 import com.google.android.material.textfield.TextInputLayout;
 
-public class CadastrarAdministradorActivity extends AppCompatActivity implements OnAuth {
+public class CadastrarUsuarioActivity extends AppCompatActivity implements OnAuth {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cadastrar_administrador);
+        setContentView(R.layout.activity_cadastrar_usuario);
 
     }
 

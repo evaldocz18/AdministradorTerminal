@@ -14,18 +14,18 @@ import com.example.evaldo.firebase.activity.Administrador.auth.Auth;
 import com.example.evaldo.firebase.activity.Administrador.auth.OnAuth;
 import com.google.android.material.textfield.TextInputLayout;
 
-public class LoginAdministradorctivity extends AppCompatActivity implements OnAuth {
+public class LoginUsuarioActivity extends AppCompatActivity implements OnAuth {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cadastrar_administradorctivity);
+        setContentView(R.layout.activity_logar_usuario);
 
         Auth.getInstance().getCurrentUser(this, new OnAuth() {
             @Override
             public void authOK(Usuario user) {
                 finish();
-                Intent intent = new Intent(LoginAdministradorctivity.this, PrincipalActivity.class);
+                Intent intent = new Intent(LoginUsuarioActivity.this, PrincipalActivity.class);
                 startActivity(intent);
             }
 
@@ -53,7 +53,7 @@ public class LoginAdministradorctivity extends AppCompatActivity implements OnAu
         Toast.makeText(this, "Falha na Autenticação", Toast.LENGTH_LONG).show();
     }
 
-    public void login(View view) {
+    public void entrar(View view) {
 
         Auth auth = Auth.getInstance();
 
@@ -64,12 +64,23 @@ public class LoginAdministradorctivity extends AppCompatActivity implements OnAu
         String password = passwordField.getEditText().getText().toString();
 
         auth.login(this, email, password, this);
+
     }
 
-    public void cadastrar(View view) {
+    public void crirConta(View view) {
 
-        Intent intent = new Intent(this, CadastrarAdministradorActivity.class);
+        Intent intent = new Intent(this, CadastrarUsuarioActivity.class);
 
+        startActivity(intent);
+    }
+
+    public void confirmarNovoCadastro(View view) {
+
+
+    }
+
+    public void esqueciSenha(View view) {
+        Intent intent = new Intent(this, RedefinirSenhaUsuarioActivity.class);
         startActivity(intent);
     }
 }
