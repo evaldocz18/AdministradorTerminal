@@ -1,4 +1,4 @@
-package com.example.evaldo.firebase.activity.Administrador.Questionarios.GerenciadorQuestionatio;
+package com.example.evaldo.firebase.activity.Administrador.Questionarios;
 
 import android.content.Intent;
 import android.provider.Settings;
@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import com.example.evaldo.firebase.activity.Administrador.Classes.ResultadosQuestionario;
 import com.example.evaldo.firebase.R;
+import com.example.evaldo.firebase.activity.Administrador.Questionarios.GerenciadorQuestionatio.ListarQuestionariosActivity;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 

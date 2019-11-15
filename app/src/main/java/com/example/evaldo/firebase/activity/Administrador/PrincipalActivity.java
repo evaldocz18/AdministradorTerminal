@@ -12,9 +12,8 @@ import android.widget.Toast;
 
 import com.example.evaldo.firebase.R;
 import com.example.evaldo.firebase.activity.Administrador.Login.LoginAdministradorctivity;
-import com.example.evaldo.firebase.activity.Administrador.Questionarios.QuestionariosActivity;
+import com.example.evaldo.firebase.activity.Administrador.Manutencao.PrincipalManutencaoActivity;
 import com.example.evaldo.firebase.activity.Administrador.Resultados.ResultadosActivity;
-import com.example.evaldo.firebase.activity.Administrador.Login.LoginDesenvolvedorActivity;
 import com.example.evaldo.firebase.activity.Administrador.Storage.StorageActivity;
 import com.example.evaldo.firebase.activity.Administrador.TerminalDePesquisa.TerminaisActivity;
 import com.example.evaldo.firebase.activity.Administrador.auth.Auth;
@@ -48,7 +47,7 @@ public class PrincipalActivity extends AppCompatActivity {
         switch (item.getItemId()) {
 
             case R.id.item_configuracoes:
-                Intent intent = new Intent(this, LoginDesenvolvedorActivity.class);
+                Intent intent = new Intent(this, PrincipalManutencaoActivity.class);
                 startActivity(intent);
                 Toast.makeText(this, "SOMENTE O DESENVOLVEDOR PODE TER ACESSO", Toast.LENGTH_LONG).show();
                 return true;

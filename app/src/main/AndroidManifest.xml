@@ -20,7 +20,6 @@
         <activity android:name=".activity.Administrador.TerminalDePesquisa.VerificarOnlineKiosques.ListaKiosquesOnlineActivity" />
         <activity android:name=".activity.Administrador.Resultados.ResultadosActivity" />
         <activity android:name=".activity.Administrador.TerminalDePesquisa.TerminaisActivity" />
-        <activity android:name=".activity.Administrador.Questionarios.QuestionariosActivity" />
         <activity android:name=".activity.Administrador.Resultados.ResultadosOuvidoria.ResultadosOuvidoriaDetalhados" />
         <activity android:name=".activity.Administrador.Resultados.ResultadosOuvidoria.ResultadosOuvidoriaQuantitativos" />
         <activity android:name=".activity.Administrador.Resultados.ResultadosQuestionarios.ExibirResultadosQuantitativosActivity" />
@@ -39,10 +38,7 @@
         <activity
             android:name=".activity.Administrador.Questionarios.GerenciadorQuestionatio.AtualizarPerguntasActivity"
             android:label="ATUALIZAR QUESTIONÁRIO" />
-        <activity android:name=".activity.Administrador.Questionarios.GerenciadorQuestionatio.NovoQuestionarioActivity" />
-        <activity
-            android:name=".activity.Administrador.Login.LoginDesenvolvedorActivity"
-            android:theme="@style/AppTheme" />
+        <activity android:name=".activity.Administrador.Questionarios.NovoQuestionarioActivity" />
         <activity android:name=".activity.Administrador.PrincipalActivity" />
         <activity android:name=".activity.Administrador.MainActivity">
             <intent-filter>
