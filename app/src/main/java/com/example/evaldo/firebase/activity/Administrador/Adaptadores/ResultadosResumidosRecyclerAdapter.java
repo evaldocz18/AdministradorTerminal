@@ -46,7 +46,7 @@ public class ResultadosResumidosRecyclerAdapter extends RecyclerView.Adapter<Res
     public void onBindViewHolder(@NonNull MeuViewHolderResultadosResumidos meuViewHolderResultadosResumidos, int position) {
 
         //System.out.println("public void onBindViewHolder(@NonNull MeuViewHolderResultadosDetalhados meuViewHolderResultadosDetalhados, int " + position +"+)");
-        meuViewHolderResultadosResumidos.tvResultadosResumidosNomeQuestionario.setText("Administrador Resposável: " + listRespResumidosAdapter.get(position).getAdministradorResponsavel());
+        meuViewHolderResultadosResumidos.tvResultadosResumidosNomeQuestionario.setText("Administrador Resposável: " + listRespResumidosAdapter.get(position).getNomeFuncionario());
         meuViewHolderResultadosResumidos.tvResultadosResumidosAdministradorResponsavel.setText("Nome do Questionário: " + listRespResumidosAdapter.get(position).getNomeQuestionario());
 
 

@@ -51,7 +51,7 @@ public class PerguntasResumidasBaseAdapter extends BaseAdapter {
         tvNomeQuestionario.setText("Nome do Questionário: "+"\n" + "(" + perguntasQuestionario.getNomeQuestionario()+ ")");
 
         TextView tvAdministradorResponsavel = view.findViewById(R.id.tv_administradorResponsavel);
-        tvAdministradorResponsavel.setText("Responsável: " + perguntasQuestionario.getAdministradorResponsavel());
+        tvAdministradorResponsavel.setText("Responsável: " + perguntasQuestionario.getNomeFuncionario());
 
         TextView tvQtdPerguntas = view.findViewById(R.id.tv_qtdPerguntas);
         tvQtdPerguntas.setText("Perguntas Cadastradas = " +perguntasQuestionario.getContPerguntas());

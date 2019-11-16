@@ -30,12 +30,12 @@ public class Autentication {
     }
 
 
-    public FirebaseUser createUser(final String email, final String password, final Context contextToast){
+    public FirebaseUser createUser(final String emailFuncionario, final String password, final Context contextToast){
 
         final FirebaseUser[] user = {null};
         final Boolean[] success = {null};
 
-        mAuth.createUserWithEmailAndPassword(email, password)
+        mAuth.createUserWithEmailAndPassword(emailFuncionario, password)
                 .addOnCompleteListener(context, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
@@ -69,12 +69,12 @@ public class Autentication {
 
 
 
-   /* public FirebaseUser entrar(final String email, final String password, final Context contextToast){
+   /* public FirebaseUser entrar(final String emailFuncionario, final String password, final Context contextToast){
 
         final FirebaseUser[] user = {null};
         final Boolean[] success = {null};
 
-        mAuth.signInWithEmailAndPassword(email, password)
+        mAuth.signInWithEmailAndPassword(emailFuncionario, password)
                 .addOnCompleteListener(context, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {

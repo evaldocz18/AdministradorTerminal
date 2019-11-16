@@ -61,7 +61,7 @@ public class ResultadosOuvidoriaQuantitativos extends AppCompatActivity {
                     try {
                         ResultadosOuvidoria ouvidoria = data.getValue(ResultadosOuvidoria.class);
                         ouvidoria.setResposta("Elogio: (" + ouvidoria.getResposta() + ")");
-                        ouvidoria.setAdministradorResponsavel("Administrador Responsável: (" + ouvidoria.getAdministradorResponsavel() + ")");
+                        ouvidoria.setNomeFuncionario("Administrador Responsável: (" + ouvidoria.getNomeFuncionario() + ")");
                         ouvidoria.setHora("(" + ouvidoria.getHora() + ")");
                         ouvidoria.setIdDispositivo("Id do dispositivo: (" + ouvidoria.getIdDispositivo() + ")" );
                         listElogios.add(ouvidoria);
@@ -99,7 +99,7 @@ public class ResultadosOuvidoriaQuantitativos extends AppCompatActivity {
                     try {
                         ResultadosOuvidoria ouvidoria = data.getValue(ResultadosOuvidoria.class);
                         ouvidoria.setResposta("Sugestões: (" + ouvidoria.getResposta() + ")");
-                        ouvidoria.setAdministradorResponsavel("Administrador Responsável: (" + ouvidoria.getAdministradorResponsavel() + ")");
+                        ouvidoria.setNomeFuncionario("Administrador Responsável: (" + ouvidoria.getNomeFuncionario() + ")");
                         listSugestoes.add(ouvidoria);
                         btSugestoes.setText("Total de Sugestões = " + listSugestoes.size());
 
@@ -133,7 +133,7 @@ public class ResultadosOuvidoriaQuantitativos extends AppCompatActivity {
                     try {
                         ResultadosOuvidoria ouvidoria = data.getValue(ResultadosOuvidoria.class);
                         ouvidoria.setResposta("Reclamações: (" + ouvidoria.getResposta() + ")");
-                        ouvidoria.setAdministradorResponsavel("Administrador Responsável: (" + ouvidoria.getAdministradorResponsavel() + ")");
+                        ouvidoria.setNomeFuncionario("Administrador Responsável: (" + ouvidoria.getNomeFuncionario() + ")");
                         listReclamacoes.add(ouvidoria);
                         btReclamacoes.setText("Total de Reclamações = " + listReclamacoes.size());
 

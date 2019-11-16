@@ -142,7 +142,7 @@ public class AtualizarPerguntasActivity extends AppCompatActivity {
 
 
             ///////////////////////Carregando perguntas das variaveis para EditText ///////////////////////////
-            etdAdministradorResponsavel.getEditText().setText(perguntasQuestionario.getAdministradorResponsavel());
+            etdAdministradorResponsavel.getEditText().setText(perguntasQuestionario.getNomeFuncionario());
 
             etdPergunta1.getEditText().setText(perguntasQuestionario.getPergunta1());
             etdPergunta2.getEditText().setText(perguntasQuestionario.getPergunta2());
@@ -560,7 +560,7 @@ public class AtualizarPerguntasActivity extends AppCompatActivity {
 
         //System.out.println("contadorPerguntasMetodoVerificar = " + contadorPerguntasMetodoVerificar);
 
-        PerguntasQuestionarioReferencia.child("id").child(idPergunta).child("administradorResponsavel").setValue(etdAdministradorResponsavel.getEditText().getText().toString());
+        PerguntasQuestionarioReferencia.child("id").child(idPergunta).child("nomeFuncionario").setValue(etdAdministradorResponsavel.getEditText().getText().toString());
         PerguntasQuestionarioReferencia.child("id").child(idPergunta).child("contPerguntas").setValue(contadorPerguntasMetodoVerificar);
 
 

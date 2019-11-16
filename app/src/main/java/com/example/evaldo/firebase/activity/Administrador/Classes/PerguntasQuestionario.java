@@ -1,16 +1,18 @@
 package com.example.evaldo.firebase.activity.Administrador.Classes;
 
 public class PerguntasQuestionario {
-    public String key, idDispositivo, hora, nomeQuestionario, administradorResponsavel,
+    public String key, idDispositivo, hora, nomeQuestionario, nomeFuncionario, emailFuncionario,
             pergunta1, pergunta2, pergunta3, pergunta4, pergunta5, pergunta6, pergunta7, pergunta8, pergunta9, pergunta10,
             resposta1, resposta2, resposta3, resposta4, resposta5, resposta6, resposta7, resposta8, resposta9, resposta10;
     public int contPerguntas;
 
-    public PerguntasQuestionario(String idDispositivo, String hora, String nomeQuestionario, String administradorResponsavel, String pergunta1, String pergunta2, String pergunta3, String pergunta4, String pergunta5, String pergunta6, String pergunta7, String pergunta8, String pergunta9, String pergunta10, String resposta1, String resposta2, String resposta3, String resposta4, String resposta5, String resposta6, String resposta7, String resposta8, String resposta9, String resposta10, int contPerguntas) {
+    public PerguntasQuestionario(String key, String idDispositivo, String hora, String nomeQuestionario, String nomeFuncionario, String emailFuncionario, String pergunta1, String pergunta2, String pergunta3, String pergunta4, String pergunta5, String pergunta6, String pergunta7, String pergunta8, String pergunta9, String pergunta10, String resposta1, String resposta2, String resposta3, String resposta4, String resposta5, String resposta6, String resposta7, String resposta8, String resposta9, String resposta10, int contPerguntas) {
+        this.key = key;
         this.idDispositivo = idDispositivo;
         this.hora = hora;
         this.nomeQuestionario = nomeQuestionario;
-        this.administradorResponsavel = administradorResponsavel;
+        this.nomeFuncionario = nomeFuncionario;
+        this.emailFuncionario = emailFuncionario;
         this.pergunta1 = pergunta1;
         this.pergunta2 = pergunta2;
         this.pergunta3 = pergunta3;
@@ -62,12 +64,12 @@ public class PerguntasQuestionario {
         this.nomeQuestionario = nomeQuestionario;
     }
 
-    public String getAdministradorResponsavel() {
-        return administradorResponsavel;
+    public String getNomeFuncionario() {
+        return nomeFuncionario;
     }
 
-    public void setAdministradorResponsavel(String administradorResponsavel) {
-        this.administradorResponsavel = administradorResponsavel;
+    public void setNomeFuncionario(String nomeFuncionario) {
+        this.nomeFuncionario = nomeFuncionario;
     }
 
     public String getResposta1() {
@@ -246,6 +248,14 @@ public class PerguntasQuestionario {
         this.resposta10 = resposta10;
     }
 
+    public String getEmailFuncionario() {
+        return emailFuncionario;
+    }
+
+    public void setEmailFuncionario(String emailFuncionario) {
+        this.emailFuncionario = emailFuncionario;
+    }
+
     @Override
     public String toString() {
         return "PerguntasQuestionario{" +
@@ -253,7 +263,8 @@ public class PerguntasQuestionario {
                 ", idDispositivo='" + idDispositivo + '\'' +
                 ", hora='" + hora + '\'' +
                 ", nomeQuestionario='" + nomeQuestionario + '\'' +
-                ", administradorResponsavel='" + administradorResponsavel + '\'' +
+                ", nomeFuncionario='" + nomeFuncionario + '\'' +
+                ", emailFuncionario='" + emailFuncionario + '\'' +
                 ", pergunta1='" + pergunta1 + '\'' +
                 ", pergunta2='" + pergunta2 + '\'' +
                 ", pergunta3='" + pergunta3 + '\'' +

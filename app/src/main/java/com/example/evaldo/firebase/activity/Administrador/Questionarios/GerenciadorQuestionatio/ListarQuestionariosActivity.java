@@ -82,7 +82,7 @@ public class ListarQuestionariosActivity extends AppCompatActivity {
                 builder.setTitle("ATENÇÃO");
                 builder.setMessage("(CUIDADO) TODOS OS DISPOSITIVOS QUE UTILIZAM ESTE QUESTIONÁRIO SERÃO AFETADOS" + "\n" + "\n" +
                         "Nome do Questionário: " + listQuestionarios.get(position).getNomeQuestionario() + "\n" + "\n" +
-                        "Administrador Responsável: " + listQuestionarios.get(position).getAdministradorResponsavel() + "\n" + "\n" +
+                        "Administrador Responsável: " + listQuestionarios.get(position).getNomeFuncionario() + "\n" + "\n" +
                         "Data da Ultima Atualização: " + listQuestionarios.get(position).getHora() + "\n" + "\n" +
                         "Quantidade de Perguntas: " + listQuestionarios.get(position).getContPerguntas() + "\n" + "\n" +
                         "Id do Questionário: " + listQuestionarios.get(position).getKey() + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" +

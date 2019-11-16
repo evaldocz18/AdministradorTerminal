@@ -83,7 +83,7 @@ public class NovoQuestionarioActivity extends AppCompatActivity {
                     String titulo = etTituloQuestionario.getText().toString();
 
                     qtdPerguntas += 1;
-                    PerguntasQuestionarioReferencia.child("id").child(postId).child("administradorResponsavel").setValue("Evaldo");
+                    PerguntasQuestionarioReferencia.child("id").child(postId).child("nomeFuncionario").setValue("Evaldo");
                     PerguntasQuestionarioReferencia.child("id").child(postId).child("nomeQuestionario").setValue(titulo);
                     PerguntasQuestionarioReferencia.child("id").child(postId).child("hora").setValue(dataCadastro);
                     PerguntasQuestionarioReferencia.child("id").child(postId).child("idDispositivo").setValue(pegarIDDispositivo());

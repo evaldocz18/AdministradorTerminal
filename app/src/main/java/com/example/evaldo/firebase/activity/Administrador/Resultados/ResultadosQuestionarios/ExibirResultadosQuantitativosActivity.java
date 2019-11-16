@@ -105,7 +105,7 @@ public class ExibirResultadosQuantitativosActivity extends AppCompatActivity {
                                                 if (resp.equals("(Não se identificou)")) {
                                                     count(pergunta, "(Não responderam) ");
                                                 } else {
-                                                    count(pergunta, "(Deixaram email ou telefone)");
+                                                    count(pergunta, "(Deixaram emailFuncionario ou telefone)");
                                                 }
 
                                             } else if (tipoPergunta.equals("Resposta Aberta")) {
