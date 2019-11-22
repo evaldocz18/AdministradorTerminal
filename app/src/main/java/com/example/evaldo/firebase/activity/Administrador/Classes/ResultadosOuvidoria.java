@@ -2,13 +2,12 @@ package com.example.evaldo.firebase.activity.Administrador.Classes;
 
 public class ResultadosOuvidoria {
 
-    private String hora, idDispositivo , nomeFuncionario, emailFuncionario,resposta;
+    private String hora, idDispositivo , administradorResponsavel, resposta;
 
-    public ResultadosOuvidoria(String hora, String idDispositivo, String nomeFuncionario, String emailFuncionario, String resposta) {
+    public ResultadosOuvidoria(String hora, String idDispositivo, String administradorResponsavel, String resposta) {
         this.hora = hora;
         this.idDispositivo = idDispositivo;
-        this.nomeFuncionario = nomeFuncionario;
-        this.emailFuncionario = emailFuncionario;
+        this.administradorResponsavel = administradorResponsavel;
         this.resposta = resposta;
     }
 
@@ -30,12 +29,12 @@ public class ResultadosOuvidoria {
         this.idDispositivo = idDispositivo;
     }
 
-    public String getNomeFuncionario() {
-        return nomeFuncionario;
+    public String getAdministradorResponsavel() {
+        return administradorResponsavel;
     }
 
-    public void setNomeFuncionario(String nomeFuncionario) {
-        this.nomeFuncionario = nomeFuncionario;
+    public void setAdministradorResponsavel(String administradorResponsavel) {
+        this.administradorResponsavel = administradorResponsavel;
     }
 
     public String getResposta() {
@@ -46,21 +45,12 @@ public class ResultadosOuvidoria {
         this.resposta = resposta;
     }
 
-    public String getEmailFuncionario() {
-        return emailFuncionario;
-    }
-
-    public void setEmailFuncionario(String emailFuncionario) {
-        this.emailFuncionario = emailFuncionario;
-    }
-
     @Override
     public String toString() {
         return "ResultadosOuvidoria{" +
                 "hora='" + hora + '\'' +
                 ", idDispositivo='" + idDispositivo + '\'' +
-                ", nomeFuncionario='" + nomeFuncionario + '\'' +
-                ", emailFuncionario='" + emailFuncionario + '\'' +
+                ", administradorResponsavel='" + administradorResponsavel + '\'' +
                 ", resposta='" + resposta + '\'' +
                 '}';
     }

@@ -44,7 +44,7 @@ public class ResultadosDetalhadosOuvidoriaAdapter extends RecyclerView.Adapter<R
     @Override
     public void onBindViewHolder(@NonNull MeuViewHolderResultadosDetalhadosOuvidoria meuViewHolderResultadosDetalhadosOuvidoria, int position) {
 
-        meuViewHolderResultadosDetalhadosOuvidoria.tvAdministradorResponsavelOuvidoria.setText(listOuvidAdapter.get(position).getNomeFuncionario());
+        meuViewHolderResultadosDetalhadosOuvidoria.tvAdministradorResponsavelOuvidoria.setText(listOuvidAdapter.get(position).getAdministradorResponsavel());
         meuViewHolderResultadosDetalhadosOuvidoria.tvHoraOuvidoria.setText(listOuvidAdapter.get(position).getHora());
         meuViewHolderResultadosDetalhadosOuvidoria.tvIdDispositivoOuvidoria.setText(listOuvidAdapter.get(position).getIdDispositivo());
         meuViewHolderResultadosDetalhadosOuvidoria.tvRespostaOuvidoria.setText(listOuvidAdapter.get(position).getResposta());

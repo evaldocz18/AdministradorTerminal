@@ -75,7 +75,7 @@ public class ExibirResultadosQuantitativosActivity extends AppCompatActivity {
 
         DatabaseReference perguntasQuestionario = FirebaseDatabase.getInstance().getReference("Banco Perguntas Questionario").child("id");
 
-        perguntasQuestionario.addListenerForSingleValueEvent(new ValueEventListener() {
+        perguntasQuestionario.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for (DataSnapshot child : dataSnapshot.getChildren()) {

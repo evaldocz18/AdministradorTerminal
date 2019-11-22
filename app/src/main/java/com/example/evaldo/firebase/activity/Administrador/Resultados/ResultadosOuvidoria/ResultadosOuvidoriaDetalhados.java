@@ -180,7 +180,7 @@ public class ResultadosOuvidoriaDetalhados extends AppCompatActivity {
             if (listOuvidoria.get(i).getResposta() != null) {
                 paragraph3 = new Paragraph(String.valueOf(listOuvidoria.get(i).getResposta()), fontMedia);
                 item.add(paragraph3);
-                paragraph3 = new Paragraph(String.valueOf(listOuvidoria.get(i).getNomeFuncionario()), fontMedia);
+                paragraph3 = new Paragraph(String.valueOf(listOuvidoria.get(i).getAdministradorResponsavel()), fontMedia);
                 item.add(paragraph3);
                 /*paragraph3 = new Paragraph(String.valueOf(listOuvidoria.get(i).getIdDispositivo()), fontMedia);
                 item.add(paragraph3);*/

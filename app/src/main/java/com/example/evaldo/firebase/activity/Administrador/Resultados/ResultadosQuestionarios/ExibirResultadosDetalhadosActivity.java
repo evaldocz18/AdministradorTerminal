@@ -71,7 +71,7 @@ public class ExibirResultadosDetalhadosActivity extends AppCompatActivity {
     ///////////////////////////////////////////METODOS///////////////////////////////////////////////////////////////////////////////////
     private void iniciarFirebase() {
         reference = FirebaseDatabase.getInstance().getReference().child("Banco Respostas Questionário").child("id");
-        reference.addValueEventListener(new ValueEventListener() {
+        reference.addListenerForSingleValueEvent(new ValueEventListener() {
 
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {

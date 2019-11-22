@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/fundologin"
     android:orientation="vertical"
-    tools:context="com.example.evaldo.firebase.activity.Administrador.Login.RedefinirSenhaUsuarioActivity">
+    tools:context="com.example.evaldo.firebase.activity.Administrador.Login.GerenciarUsuario.RedefinirSenhaUsuarioActivity">
 
     <TextView
         android:id="@+id/textView2"

@@ -61,7 +61,7 @@ public class ResultadosOuvidoriaQuantitativos extends AppCompatActivity {
                     try {
                         ResultadosOuvidoria ouvidoria = data.getValue(ResultadosOuvidoria.class);
                         ouvidoria.setResposta("Elogio: (" + ouvidoria.getResposta() + ")");
-                        ouvidoria.setNomeFuncionario("Administrador Responsável: (" + ouvidoria.getNomeFuncionario() + ")");
+                        ouvidoria.setAdministradorResponsavel("Administrador Responsável: (" + ouvidoria.getAdministradorResponsavel() + ")");
                         ouvidoria.setHora("(" + ouvidoria.getHora() + ")");
                         ouvidoria.setIdDispositivo("Id do dispositivo: (" + ouvidoria.getIdDispositivo() + ")" );
                         listElogios.add(ouvidoria);
@@ -99,7 +99,7 @@ public class ResultadosOuvidoriaQuantitativos extends AppCompatActivity {
                     try {
                         ResultadosOuvidoria ouvidoria = data.getValue(ResultadosOuvidoria.class);
                         ouvidoria.setResposta("Sugestões: (" + ouvidoria.getResposta() + ")");
-                        ouvidoria.setNomeFuncionario("Administrador Responsável: (" + ouvidoria.getNomeFuncionario() + ")");
+                        ouvidoria.setAdministradorResponsavel("Administrador Responsável: (" + ouvidoria.getAdministradorResponsavel() + ")");
                         listSugestoes.add(ouvidoria);
                         btSugestoes.setText("Total de Sugestões = " + listSugestoes.size());
 
@@ -133,7 +133,7 @@ public class ResultadosOuvidoriaQuantitativos extends AppCompatActivity {
                     try {
                         ResultadosOuvidoria ouvidoria = data.getValue(ResultadosOuvidoria.class);
                         ouvidoria.setResposta("Reclamações: (" + ouvidoria.getResposta() + ")");
-                        ouvidoria.setNomeFuncionario("Administrador Responsável: (" + ouvidoria.getNomeFuncionario() + ")");
+                        ouvidoria.setAdministradorResponsavel("Administrador Responsável: (" + ouvidoria.getAdministradorResponsavel() + ")");
                         listReclamacoes.add(ouvidoria);
                         btReclamacoes.setText("Total de Reclamações = " + listReclamacoes.size());
 
@@ -158,7 +158,7 @@ public class ResultadosOuvidoriaQuantitativos extends AppCompatActivity {
     }
 
     public void clicouExibirElogiosDetalhados(View view) {
-        if (listSugestoes.isEmpty()) {
+        if (listElogios.isEmpty()) {
             Toast.makeText(this, "Por favor aguarde carregar os dados",Toast.LENGTH_LONG).show();
         }else {
             listOuvidoria = listElogios;
@@ -178,7 +178,7 @@ public class ResultadosOuvidoriaQuantitativos extends AppCompatActivity {
     }
 
     public void clicouExibirRecclamacoesDetalhadas(View view) {
-        if (listSugestoes.isEmpty()) {
+        if (listReclamacoes.isEmpty()) {
             Toast.makeText(this, "Por favor aguarde carregar os dados",Toast.LENGTH_LONG).show();
         }else {
             listOuvidoria = listReclamacoes;

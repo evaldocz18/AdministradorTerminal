@@ -9,6 +9,8 @@ import android.widget.Toast;
 
 import com.example.evaldo.firebase.R;
 import com.example.evaldo.firebase.activity.Administrador.Classes.Usuario;
+import com.example.evaldo.firebase.activity.Administrador.Login.GerenciarUsuario.CadastrarUsuarioActivity;
+import com.example.evaldo.firebase.activity.Administrador.Login.GerenciarUsuario.RedefinirSenhaUsuarioActivity;
 import com.example.evaldo.firebase.activity.Administrador.PrincipalActivity;
 import com.example.evaldo.firebase.activity.Administrador.auth.Auth;
 import com.example.evaldo.firebase.activity.Administrador.auth.OnAuth;

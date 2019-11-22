@@ -1,4 +1,4 @@
-package com.example.evaldo.firebase.activity.Administrador.Login;
+package com.example.evaldo.firebase.activity.Administrador.Login.GerenciarUsuario;
 
 import androidx.appcompat.app.AppCompatActivity;
 
