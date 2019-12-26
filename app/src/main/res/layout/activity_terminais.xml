@@ -25,7 +25,7 @@
         android:padding="8dp"
         android:text="Definir Imagem para Terminais de Pesquisa"
         android:textSize="16sp"
-        android:visibility="visible" />
+        android:visibility="invisible" />
 
     <Button
         android:id="@+id/bt_kiosque_verifica_online"

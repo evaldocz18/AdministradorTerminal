@@ -25,7 +25,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-public class ResultadosQuestionariosActivity extends AppCompatActivity {
+public class ListarQuestionariosResultadosActivity extends AppCompatActivity {
 
     private PerguntasQuestionario perguntasQuestionario;
 
@@ -37,7 +37,7 @@ public class ResultadosQuestionariosActivity extends AppCompatActivity {
     private DatabaseReference referencePerguntas;
     private DatabaseReference referenceRespostas;
     private String selectedName;
-    Context context = ResultadosQuestionariosActivity.this;
+    Context context = ListarQuestionariosResultadosActivity.this;
 
     //-------------------Variáveias para dados quantitativos---------------------------------------
     //private Context context;
@@ -148,14 +148,14 @@ public class ResultadosQuestionariosActivity extends AppCompatActivity {
 
                 }
 
-                questAdapter = new ResultadosResumidosRecyclerAdapter(questListResumidos, ResultadosQuestionariosActivity.this);
+                questAdapter = new ResultadosResumidosRecyclerAdapter(questListResumidos, ListarQuestionariosResultadosActivity.this);
                 recyclerView.setAdapter(questAdapter);
 
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-                Toast.makeText(ResultadosQuestionariosActivity.this, "Erro no iniciarFirebasePerguntas", Toast.LENGTH_LONG).show();
+                Toast.makeText(ListarQuestionariosResultadosActivity.this, "Erro no iniciarFirebasePerguntas", Toast.LENGTH_LONG).show();
             }
         });
         System.out.println("Iniciou = iniciarFirebasePerguntas ");
@@ -167,7 +167,7 @@ public class ResultadosQuestionariosActivity extends AppCompatActivity {
 
         Query query = referenceRespostas.orderByChild("nomeQuestionario").equalTo(perguntasQuestionarioQuantitativo.getNomeQuestionario());
 
-        query.addListenerForSingleValueEvent(new ValueEventListener() {
+        query.addValueEventListener(new ValueEventListener() {
 
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -189,14 +189,14 @@ public class ResultadosQuestionariosActivity extends AppCompatActivity {
                 //System.out.println(" questListResumidos.toString() = " + questListResumidos.toString());
                 //System.out.println(" questListResumidos.size() = " + questListResumidos.size());
 
-                // questAdapter = new ResultadosResumidosRecyclerAdapter(resultListResumidos, ResultadosQuestionariosActivity.this);
+                // questAdapter = new ResultadosResumidosRecyclerAdapter(resultListResumidos, ListarQuestionariosResultadosActivity.this);
                 //recyclerView.setAdapter(questAdapter);
 
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-                //Toast.makeText(ResultadosQuestionariosActivity.this, "Erro no iniciarFirebasePerguntas", Toast.LENGTH_LONG).show();
+                //Toast.makeText(ListarQuestionariosResultadosActivity.this, "Erro no iniciarFirebasePerguntas", Toast.LENGTH_LONG).show();
             }
         });
 

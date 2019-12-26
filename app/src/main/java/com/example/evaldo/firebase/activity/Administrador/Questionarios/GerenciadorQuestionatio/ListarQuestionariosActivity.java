@@ -212,7 +212,7 @@ public class ListarQuestionariosActivity extends AppCompatActivity {
     }
 
     private void chamarTelaAtualizarPerguntas() {
-        Intent intent = new Intent(ListarQuestionariosActivity.this, AtualizarPerguntasActivity.class);
+        Intent intent = new Intent(ListarQuestionariosActivity.this, EditarPerguntasActivity.class);
         startActivity(intent);
     }
 

@@ -8,7 +8,7 @@ import android.view.View;
 
 import com.example.evaldo.firebase.R;
 import com.example.evaldo.firebase.activity.Administrador.Resultados.ResultadosOuvidoria.ResultadosOuvidoriaQuantitativos;
-import com.example.evaldo.firebase.activity.Administrador.Resultados.ResultadosQuestionarios.ResultadosQuestionariosActivity;
+import com.example.evaldo.firebase.activity.Administrador.Resultados.ResultadosQuestionarios.ListarQuestionariosResultadosActivity;
 
 public class ResultadosActivity extends AppCompatActivity {
 
@@ -19,7 +19,7 @@ public class ResultadosActivity extends AppCompatActivity {
     }
 
     public void click_resultados_questionarios(View view) {
-        Intent intent = new Intent(this, ResultadosQuestionariosActivity.class);
+        Intent intent = new Intent(this, ListarQuestionariosResultadosActivity.class);
         startActivity(intent);
     }
 

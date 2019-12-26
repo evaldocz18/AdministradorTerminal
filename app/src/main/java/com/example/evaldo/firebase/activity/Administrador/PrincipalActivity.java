@@ -13,6 +13,7 @@ import android.widget.Toast;
 import com.example.evaldo.firebase.R;
 import com.example.evaldo.firebase.activity.Administrador.Login.LoginUsuarioActivity;
 import com.example.evaldo.firebase.activity.Administrador.Manutencao.PrincipalManutencaoActivity;
+import com.example.evaldo.firebase.activity.Administrador.Questionarios.GerenciadorQuestionatio.ListarQuestionariosActivity;
 import com.example.evaldo.firebase.activity.Administrador.Questionarios.NovoQuestionarioActivity;
 import com.example.evaldo.firebase.activity.Administrador.Resultados.ResultadosActivity;
 import com.example.evaldo.firebase.activity.Administrador.Storage.StorageActivity;
@@ -68,7 +69,7 @@ public class PrincipalActivity extends AppCompatActivity {
     }
 
     public void click_questionarios(View view) {
-        Intent intent = new Intent(this, NovoQuestionarioActivity.class);
+        Intent intent = new Intent(this, ListarQuestionariosActivity.class);
         startActivity(intent);
     }
 

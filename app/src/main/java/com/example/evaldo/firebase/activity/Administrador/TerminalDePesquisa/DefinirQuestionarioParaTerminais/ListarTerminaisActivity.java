@@ -114,7 +114,7 @@ public class ListarTerminaisActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-                //Toast.makeText(ResultadosQuestionariosActivity.this, "Erro no iniciarFirebasePerguntas", Toast.LENGTH_LONG).show();
+                //Toast.makeText(ListarQuestionariosResultadosActivity.this, "Erro no iniciarFirebasePerguntas", Toast.LENGTH_LONG).show();
             }
         });
 

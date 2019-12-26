@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    tools:context=".activity.Administrador.Resultados.ResultadosQuestionarios.ResultadosQuestionariosActivity">
+    tools:context=".activity.Administrador.Resultados.ResultadosQuestionarios.ListarQuestionariosResultadosActivity">
 
     <Button
         android:id="@+id/bt_listarResultadosResumidos_confirmar"

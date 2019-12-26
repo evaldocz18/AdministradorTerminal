@@ -344,7 +344,6 @@ public class ExibirResultadosQuantitativosActivity extends AppCompatActivity {
         }
     }
 
-
     private String pegandoHora() {
         SimpleDateFormat formataData = new SimpleDateFormat("dd-MM-yyyy");
         SimpleDateFormat formatHora = new SimpleDateFormat("HH:mm:ss");

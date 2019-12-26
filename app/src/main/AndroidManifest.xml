@@ -29,7 +29,7 @@
         <activity android:name=".activity.Administrador.TerminalDePesquisa.DefinirQuestionarioParaTerminais.ListarQuestionarioResumidasTerminalActivity" />
         <activity android:name=".activity.Administrador.TerminalDePesquisa.DefinirQuestionarioParaTerminais.ListarTerminaisActivity" />
         <activity
-            android:name=".activity.Administrador.Resultados.ResultadosQuestionarios.ResultadosQuestionariosActivity"
+            android:name=".activity.Administrador.Resultados.ResultadosQuestionarios.ListarQuestionariosResultadosActivity"
             android:label="@string/title_activity_listar_respostas_resumidas"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
@@ -37,7 +37,7 @@
             android:label="@string/title_activity_geranciar_perguntas_mais"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.Administrador.Questionarios.GerenciadorQuestionatio.AtualizarPerguntasActivity"
+            android:name=".activity.Administrador.Questionarios.GerenciadorQuestionatio.EditarPerguntasActivity"
             android:label="ATUALIZAR QUESTIONÁRIO" />
         <activity android:name=".activity.Administrador.Questionarios.NovoQuestionarioActivity" />
         <activity android:name=".activity.Administrador.PrincipalActivity" />
